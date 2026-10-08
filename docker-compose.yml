@@ -4,6 +4,7 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: my_app_db
     volumes:
       - db_data:/var/lib/mysql
     healthcheck:
@@ -26,5 +27,6 @@ services:
       DB_USER: root
       DB_PASSWORD: ${DB_PASSWORD}
       DB_NAME: my_app_db
-    volumes:
-      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

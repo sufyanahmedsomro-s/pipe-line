@@ -1,0 +1,14 @@
+{
+  "name": "contact-app",
+  "version": "1.0.0",
+  "description": "Node.js MySQL Contact App",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "node --check src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.9.2"
+  }
+}
